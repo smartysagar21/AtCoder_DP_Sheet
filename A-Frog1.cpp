@@ -5,6 +5,10 @@ using namespace std;
 #define ll long long
 
 
+//State:       dp[i] -> min cost to move to ith stone
+//Transition:  dp[i] -> min(dp[k] + abs(v[i] - v[k]), where k = i-1, i-2
+
+
 int main() {
 
 	ios_base::sync_with_stdio(false);
